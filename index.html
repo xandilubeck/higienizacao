@@ -8,26 +8,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="sobre" class="pt-5 pb-5">
+    <section id="" class="pt-5 pb-5">
         <div class="container">
             <div class="row">
-                <h2>Sobre a empresa</h2>
+                <h2>Consultório Psico-pedagógico</h2>
             </div>
             <div class="row">
-                <aside class="col-md-2">
-                    <nav class="flex-column nav-pills">
-                        <button type="button" data-bs-toggle="tab" data-bs-target="#" class="fw-bold">Quem somos</button>
-                        <button type="button" data-bs-toggle="tab" data-bs-target="#" class="fw-bold">Objetivo</button>
-                        <button type="button" data-bs-toggle="tab" data-bs-target="#" class="fw-bold">Orientações</button>
-                    </nav>
-                </aside>
-                <div class="col-md-10">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam porro veritatis commodi dicta, mollitia dolore nulla perspiciatis voluptates adipisci repellendus alias nobis nihil eos ipsam quia rem repellat dolorem.
+                <div class="d-flex align-items-start">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-about-tab" data-bs-toggle="pill" data-bs-target="#v-pills-about" type="button" role="tab" aria-controls="v-pills-about" aria-selected="true">Sobre a clínica</button>
+                    <button class="nav-link" id="v-pills-orientaction-tab" data-bs-toggle="pill" data-bs-target="#v-pills-orientaction" type="button" role="tab" aria-controls="v-pills-orientaction" aria-selected="false">Orientações</button>
+                    <button class="nav-link" id="v-pills-contact-tab" data-bs-toggle="pill" data-bs-target="#v-pills-contact" type="button" role="tab" aria-controls="v-pills-contact" aria-selected="false">Contato</button>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-about" role="tabpanel" aria-labelledby="v-pills-about-tab" tabindex="0">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga in earum perferendis temporibus ut itaque ipsa possimus iure, incidunt nam atque soluta quos doloribus nemo libero nobis rerum explicabo ratione!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga in earum perferendis temporibus ut itaque ipsa possimus iure, incidunt nam atque soluta quos doloribus nemo libero nobis rerum explicabo ratione!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga in earum perferendis temporibus ut itaque ipsa possimus iure, incidunt nam atque soluta quos doloribus nemo libero nobis rerum explicabo ratione!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga in earum perferendis temporibus ut itaque ipsa possimus iure, incidunt nam atque soluta quos doloribus nemo libero nobis rerum explicabo ratione!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga in earum perferendis temporibus ut itaque ipsa possimus iure, incidunt nam atque soluta quos doloribus nemo libero nobis rerum explicabo ratione!
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-orientaction" role="tabpanel" aria-labelledby="v-pills-orientaction-tab" tabindex="0">
+                            <div class="d-block">
+                                <img src="images/9311806.png" alt="" />
+                                <img src="images/9311806.png" alt="" />
+                                <img src="images/9311806.png" alt="" />
+                            </div>
+                            <h5>Orientações para os pais</h5>
+                            <p>
+                                Desenvolver recursos internos para crianças, transtornos na aprendizagem, lidar com a raiva, frustração, se comportar na desregulação na sala de aula
+                            </p>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-contact" role="tabpanel" aria-labelledby="v-pills-contact-tab" tabindex="0">
+                                <form class="form-floating mt-2">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Seu nome aqui">
+                                        <label for="name">Seu nome</label>
+                                    </div>
+                                    <div class="form-floating mt-2">
+                                        <input type="email" class="form-control" id="email" placeholder="Seu e-mail aqui">
+                                        <label for="email">Seu e-mail</label>
+                                    </div>
+                                    <div class="form-floating mt-2">
+                                        <input type="tel" class="form-control" id="fone" placeholder="Seu telefone aqui">
+                                        <label for="fone">Seu telefone de contato</label>
+                                    </div>
+                                    <div class="form-floating mt-2">
+                                        <textarea class="form-control" id="msn" placeholder="Sua mensagem aqui"></textarea>
+                                        <label for="msn">Mensagem</label>
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    
-</section>
+    </section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
