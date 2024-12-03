@@ -3,68 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultório</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="" class="pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <h2>Consultório Psico-pedagógico</h2>
+<header class="row navbar sticky-top">
+    <nav id="navbar-top" class="navbar bg-body-tertiary px-3 mb-3">
+        <a class="navbar-brand" href="#"><img src="./images/logo.jpg"></a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">Página Inicial</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Serviços</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading3">Contato</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading3">Orçamento</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-top" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+        <div id="scrollspyHeading1">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="./images/imagem1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./images/imagem2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./images/imagem3.jpg" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="row">
-                <div class="d-flex align-items-start">
-                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button class="nav-link active" id="v-pills-about-tab" data-bs-toggle="pill" data-bs-target="#v-pills-about" type="button" role="tab" aria-controls="v-pills-about" aria-selected="true">Sobre a clínica</button>
-                    <button class="nav-link" id="v-pills-orientaction-tab" data-bs-toggle="pill" data-bs-target="#v-pills-orientaction" type="button" role="tab" aria-controls="v-pills-orientaction" aria-selected="false">Orientações</button>
-                    <button class="nav-link" id="v-pills-contact-tab" data-bs-toggle="pill" data-bs-target="#v-pills-contact" type="button" role="tab" aria-controls="v-pills-contact" aria-selected="false">Contato</button>
+        </div>
+        <div class="rol mb-5 mt-5 about">
+            <h3 class="mb-3">SOBRE A EMPRESA</h3>
+            <P>Somos especialistas em tratamento de beleza para estofados. Proporcionamos mais qualidade de vida para você e sua família, através da saúde e bem-estar, resultantes de nossos processos de higienização e impermeabilização.<br>
+                
+                A LÜBECK'S Higienizações, Impermeabilização e Limpeza Especializada é uma empresa gaúcha especializada no serviço de Limpeza Pós Obra. Nossos serviços visam executar a limpeza pesada, removendo sujeiras difíceis de maneira refinada sem danos à superfície.<br>
+                - A limpeza depois da construção ou reforma deve ser executada por profissionais altamente capacitados e com equipamentos e produtos apropriados, possibilitando a remoção de toda incrustação de cimento, rejunte, gesso e tinta, que ficam após a obra, sem danificar piso, bancadas, paredes, vidros, janelas;<br>
+                - A utilização de produtos de última geração, somada ao cuidado e supervisão do trabalho, proporciona um serviço de limpeza ágil e eficiente;<br>
+                - Temos como compromisso oferecer tranquilidade, confiança e comprometimento aos nossos clientes, dando atenção aos mínimos detalhes e mantendo constante preocupação em inovar e surpreender a cada serviço executado;<br>
+                - Desenvolvemos nossas atividades de forma segura, econômica e rápida, valendo-nos de uma equipe eficiente e da utilização de produtos de alta qualidade.</P>
+        </div>
+        <div class="row" id="scrollspyHeading2">
+            <h3 class="mb-3">NOSSOS SERVIÇOS</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 card-group">
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img src="./images/colchao.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Higienização de Colchões</h5>
+                        <p class="card-text">Usamos um equipamento com alto poder de sucção que é capaz de <span class="fw-bold">eliminar todas as impurezas</span> e deixars seu colchão agradável e renovado.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
                     </div>
-                    <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="v-pills-about" role="tabpanel" aria-labelledby="v-pills-about-tab" tabindex="0">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga in earum perferendis temporibus ut itaque ipsa possimus iure, incidunt nam atque soluta quos doloribus nemo libero nobis rerum explicabo ratione!
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga in earum perferendis temporibus ut itaque ipsa possimus iure, incidunt nam atque soluta quos doloribus nemo libero nobis rerum explicabo ratione!
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga in earum perferendis temporibus ut itaque ipsa possimus iure, incidunt nam atque soluta quos doloribus nemo libero nobis rerum explicabo ratione!
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga in earum perferendis temporibus ut itaque ipsa possimus iure, incidunt nam atque soluta quos doloribus nemo libero nobis rerum explicabo ratione!
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga in earum perferendis temporibus ut itaque ipsa possimus iure, incidunt nam atque soluta quos doloribus nemo libero nobis rerum explicabo ratione!
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img src="./images/estofados.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Higienização de Espofados</h5>
+                        <p class="card-text">É uma <span class="fw-bold">lavagem ecológica</span>, pois utiliza pouquíssimo líquido em comparação com uma lavagem convencional.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img src="./images/tapetes.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Limpeza de Tapetes</h5>
+                        <p class="card-text">Proporcionamos <span class="fw-bold">limpeza profunda</span>, utilizamos bacterecidas que matam todos os ácaros e fungos nocivos à saúde e que causam o mau cheiro.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img src="./images/impermeabilizacao.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Impermeabilização</h5>
+                        <p class="card-text">A <span class="fw-bold">impermeabilização</span> de sofá é a aplicação de um produto que garante o fechamento das fibras do tecido, bloqueando a passagem de líquidos.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img src="./images/automotivo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Higienização Automotiva</h5>
+                        <p class="card-text">Limpeza <span class="fw-bold">detalhada</span>, que remove sujeiras quase imperceptíveis, que possam existir nos bancos, estofamentos ou outras partes internas.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img src="./images/obra.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Limpeza Pós Obra</h5>
+                        <p class="card-text">Nossos serviços visam executar a <span class="fw-bold">limpeza pesada</span>, removendo sujeiras difíceis de maneira refinada sem danos à superfície.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5" id="scrollspyHeading3">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="contato-tab" data-bs-toggle="tab" data-bs-target="#contato-tab-pane" type="button" role="tab" aria-controls="contato-tab-pane" aria-selected="true">Contato</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                <button class="nav-link" id="orcamento-tab" data-bs-toggle="tab" data-bs-target="#orcamento-tab-pane" type="button" role="tab" aria-controls="orcamento-tab-pane" aria-selected="false">Orçamento</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="contato-tab-pane" role="tabpanel" aria-labelledby="contato-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-6 mt-4">
+                            <img src="images/mapa.jpeg" alt="">
                         </div>
-                        <div class="tab-pane fade" id="v-pills-orientaction" role="tabpanel" aria-labelledby="v-pills-orientaction-tab" tabindex="0">
-                            <div class="d-block">
-                                <img src="images/9311806.png" alt="" />
-                                <img src="images/9311806.png" alt="" />
-                                <img src="images/9311806.png" alt="" />
-                            </div>
-                            <h5>Orientações para os pais</h5>
+                        <div class="col-md-6 mt-4">
+                            <h3>
+                                Onde estamos
+                            </h3>
                             <p>
-                                Desenvolver recursos internos para crianças, transtornos na aprendizagem, lidar com a raiva, frustração, se comportar na desregulação na sala de aula
+                                Rua Rio Grande do Sul, 877 - Gaúcho/RS<br>
+                                Telefone: (51) 12345-6789
                             </p>
                         </div>
-
-                        <div class="tab-pane fade" id="v-pills-contact" role="tabpanel" aria-labelledby="v-pills-contact-tab" tabindex="0">
-                                <form class="form-floating mt-2">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Seu nome aqui">
-                                        <label for="name">Seu nome</label>
-                                    </div>
-                                    <div class="form-floating mt-2">
-                                        <input type="email" class="form-control" id="email" placeholder="Seu e-mail aqui">
-                                        <label for="email">Seu e-mail</label>
-                                    </div>
-                                    <div class="form-floating mt-2">
-                                        <input type="tel" class="form-control" id="fone" placeholder="Seu telefone aqui">
-                                        <label for="fone">Seu telefone de contato</label>
-                                    </div>
-                                    <div class="form-floating mt-2">
-                                        <textarea class="form-control" id="msn" placeholder="Sua mensagem aqui"></textarea>
-                                        <label for="msn">Mensagem</label>
-                                    </div>
-                                </form>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="orcamento-tab-pane" role="tabpanel" aria-labelledby="orcamento-tab" tabindex="0">
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="floatingInputNome">
+                        <label for="floatingInputNome">Seu nome</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="tel" class="form-control" id="floatingINputFone">
+                        <label for="floatingINputFone">Seu telefone com (DDD)</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select">
+                                    <option selected>Selecione</option>
+                                    <option value="1">Higienização de Colchões</option>
+                                    <option value="2">Higienização de Estofados</option>
+                                    <option value="3">Limpeza de Tapetes</option>
+                                    <option value="4">Impermeabilização</option>
+                                    <option value="5">Higienização Automotiva</option>
+                                    <option value="6">Limpeza Pós Obra</option>
+                                </select>
+                                <label for="floatingSelect">Tipo de serviço</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelect2" aria-label="Floating label select">
+                                    <option selected>1</option>
+                                    <option value="1">2</option>
+                                    <option value="2">3</option>
+                                    <option value="3">4</option>
+                                </select>
+                                <label for="floatingSelect2">Quantidade</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="#" class="btn btn-primary">Enviar</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+  </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

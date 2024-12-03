@@ -1,0 +1,38 @@
+body {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.navbar-brand h1, h5{
+    display: inline;
+}
+
+#carouselExample img {
+    height: 200px;
+}
+
+.about p {
+    text-align: justify;
+}
+
+.card-group p {
+    text-align: justify;
+}
+
+#contato-tab {
+    width: 500px;
+}
+
+#scrollspyHeading3 img {
+    width: 100%;
+}
+
+#scrollspyHeading3 a {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+
+#orcamento-tab {
+    width: 500px;
+}
