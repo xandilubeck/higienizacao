@@ -3,10 +3,6 @@ body {
     width: 1024px;
 }
 
-.navbar-brand h1, h5{
-    display: inline;
-}
-
 #carouselExample img {
     height: 200px;
 }
@@ -36,3 +32,4 @@ body {
 #orcamento-tab {
     width: 500px;
 }
+
